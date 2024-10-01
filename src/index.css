@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row {
+  @apply flex flex-wrap py-5 px-3;
+}
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+.btn {
+  @apply w-full bg-emerald-600 text-slate-200 rounded-lg p-2;
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(60, 212, 60);
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+}
